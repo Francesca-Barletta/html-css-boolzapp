@@ -48,7 +48,8 @@ img{
 .flex{
     display: flex;
     justify-content: space-between;
-    align-items:center
+    align-items:center;
+    gap:20px;
 }
 
 .avatar{
@@ -107,6 +108,20 @@ img{
 }
 .text-here{
     background-color: white;
+}
+i {
+    color: #B1B1B1;
+}
+.notify-bell i{
+    text-align: center;
+    color: #A6D7F9;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    height: 53px;
+    line-height: 53px;
+
 }
 
 /*MEDIA QUERY*/
@@ -204,6 +219,8 @@ img{
    }
    .search-box{
     background-color: white;
+    gap: 10px;
+    padding: 0 14px;
    }
    .search-text{
     padding: 10px 14px;
