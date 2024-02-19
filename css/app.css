@@ -1,0 +1,53 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+ul,ol, menu{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+/*LAYOUT*/
+.app{
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.container-lg{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*COMPONENTS*/
+
+/*UTILITIES*/
+
+/*STYLE*/
+
+.app{
+    background-color: darkolivegreen;
+    padding: 50px 0;
+}
+.container{
+    border: 2px solid white;
+    background-color: bisque;
+}
+
+/*MEDIA QUERY*/
