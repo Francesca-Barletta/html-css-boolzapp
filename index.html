@@ -15,7 +15,8 @@
             <div class="row">
 
 <!--inizio sidebar-->
-                <div class="sidebar">
+<section class="sidebar"> 
+                <div>
                     <div class="sidebar-header flex border">
                         <div class="mine-avatar avatar border">
                             <img src="" alt="">
@@ -28,19 +29,44 @@
                           </ul>
                         </div>
                     </div>
-                    <div class="message-notification border">new message</div>
-                    <div class="sidebar-search border"> search</div>
-                    <div class="sidebar-contacts border"> contacts</div>
-                </div>
+                    <div class="message-notification border">
+                        <div class="avatar border"></div>
+                        <div class="notification">
+                            <p>Ricevi notifiche di nuovi messaggi</p>
+                            <a href="#">attiva notifiche desktop</a>
+                        </div>
 
+                    </div>
+                    <div class="sidebar-search border">
+                        <div class="search-box flex">
+                            <div>Q</div>
+                            <div class="search-text">Cerca o inizia una nuova chat</div>
+                        </div>
+                    </div>
+                    <div class="sidebar-contacts border">
+                        <div class="contact-card flex">
+                            <div class="contact avatar border">
+                                <img src="" alt="">
+                            </div>
+                            <div class="contact-sidebar-info">
+                                <div class="contact-name border">Michele</div>
+                                <div class="contact-last-message border">ultimo accesso</div>
+                            </div>
+                            <div class="last-message-time border">16:15</div>
+                        </div>
+                    </div>
+                </div>
+</section>
 <!--fine sidebar-->
 
 <!--inizio main-->
-                <div class="app-main">
+<section class="app-main">
+                <div>
 
 <!--inizio main nav-->
-                    <div class="main-nav flex">
-                        <div class="flex">
+    <section class="main-nav">
+                    <div class="flex">
+                        <div class="flex gap-14">
                             <div class="chat-avatar avatar border">
                                 <img src="" alt="">
                             </div>
@@ -58,20 +84,23 @@
                         </div>
 
                     </div>
-<!--fine main nav inizio main chat-->
-                    <div class="main-chat">chat</div>
-
-<!--fine content inizio main chat-->
-                    <div class="main-message flex">
+    </section>
+<!--fine main nav inizio main-chat-->
+    <section class="main-chat">
+                    <div>chat</div>
+    </section>
+<!--fine content inizio main-message-->
+    <section class="main-message">
+                    <div class="flex">
                         <div class="emoticon border">&smile;</div>
                         <div class="text-here border ">scrivi un messaggio</div>
                         <div class="mic border">mic</div>
                     </div>
+    </section>
                 </div>
-
             </div>
         </div>
     </div>
-    
+</section>   
 </body>
 </html>
