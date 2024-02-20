@@ -175,7 +175,7 @@ i {
 }
 .contact-text{
     background-color: white;
-    padding: 18px;
+    padding: 14px;
     border-radius: 11px;
     max-width: 80%;
     font-size: 14px;
@@ -195,9 +195,24 @@ i {
 .text-info a{
     align-self: flex-end;
 }
-
-
-
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    position: absolute;
+    display: none;
+    z-index: 1;
+    background-color: rgba(255, 249, 249, 0.5);
+    color: #B1B1B1;
+}
+.dropdown:hover .dropdown-content{
+    display: block; 
+}
+.notification a{
+    text-decoration: underline;
+    color:#6D7376;
+}
 /*MEDIA QUERY*/
 
 /*da 768px a 992px*/
