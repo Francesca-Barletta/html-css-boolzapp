@@ -147,6 +147,35 @@ i {
 .sidebar-contacts{
     height: 100%;
 }
+.main-chat{
+    padding: 40px 0;
+}
+.mine-text{
+    background-color: #DEF8C0;
+    padding: 18px;
+    border-radius: 11px;
+    max-width: 80%;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 8px; 
+}
+.contact-text{
+    background-color: white;
+    padding: 18px;
+    border-radius: 11px;
+    max-width: 80%;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: auto;
+    margin-left: 20px;
+    margin-bottom: 8px; 
+}
+
+
+
+
 /*MEDIA QUERY*/
 
 /*da 768px a 992px*/
@@ -157,10 +186,12 @@ i {
         display: flex;
     }
     .sidebar{
-        display: block;
+        display: flex;
+        flex-direction: column;
         width: 80px;
-        min-height: 100%;
         background-color: #FAFAFA;
+        flex-shrink: 0;
+
     }
     .contact-sidebar-info, .last-message-time{
         display: none;
@@ -183,10 +214,18 @@ i {
         border-bottom: 1px solid #FAFAFA;
         padding: 7px 14px;
     }
- 
+    .mine-text, .contact-text{
+        max-width: 60%;
+    }
+    .mine-text{
+        margin-right: 50px;
+    }
+    .contact-text{
+        margin-left: 50px;
+    }
 }
 
-/*da 1200px in su*/
+/*da 992px in su*/
 
 @media (min-width:992px){
 
@@ -226,7 +265,7 @@ i {
     }
     .sidebar-contacts{
         background-color: #FAFAFA;
-        height: calc(100% - 207px);
+        max-height: calc(100% - 207px);
     }
     .sidebar-search{
         display: block;
@@ -243,5 +282,11 @@ i {
     }
     .contact-list{
         margin-right: 14px;
+    }
+    .mine-text{
+        margin-right: 8%;
+    }
+    .contact-text{
+        margin-left: 8%;
     }
 }
