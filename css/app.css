@@ -76,7 +76,7 @@ body{
     background-image: url(../img/mine.jpg);
     border-right: 15px solid white;
     min-width: 100%;
-    height: calc(100vh - 140px);
+    height: calc(100vh - 140px)
     
 }
 .main-message{
@@ -275,12 +275,13 @@ i {
 @media (min-width:992px){
 
     .app{
-        padding: 32px 0;
+        padding: 3vh 0;
     }
     .container-lg{
         width: 80%;
         margin: 0 auto;
     }
+  
     .sidebar{
         width: 380px;
     }
@@ -296,8 +297,10 @@ i {
         align-self: flex-start;
     }
     .main-chat{
-        height: calc(100vh - 208px);
+        height: calc(94vh - 140px);
     }
+   
+    
     .sidebar-nav{
         display: block;
     }
