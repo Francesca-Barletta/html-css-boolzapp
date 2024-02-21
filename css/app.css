@@ -18,6 +18,12 @@ img{
 body{
     font-family: "Lato", sans-serif;
 }
+
+input, textarea{
+    border: none;
+    background: transparent;
+}
+
 /*LAYOUT*/
 .app{
     height: 100vh;
@@ -317,16 +323,26 @@ i {
     }
     .sidebar-search{
         display: block;
-        padding: 8px;
+        position: relative;
+        margin: 10px 0;
+        
     }
-    .search-box{
+   .sidebar-search input {
+        width: 100%;
+        height: 30px;
         background-color: white;
-        gap: 10px;
-        padding: 0 14px;
-    }
-    .search-text{
-        padding: 10px 14px;
-        flex-grow: 1;
+        outline: none;
+        border-top: 1px solid #B1B1B180;
+        border-bottom: 1px solid #B1B1B180;
+        padding-left: 50px;
+        padding-right: 10px;
+   }
+    .sidebar-search i {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        pointer-events:none;
     }
     .contact-list{
         margin-right: 14px;
