@@ -105,7 +105,7 @@ input, textarea{
     display:none;
     padding-right: 10px;
 }
-
+/*
 .text-here{
     background-color: white;
     width: 100%;
@@ -115,9 +115,15 @@ input, textarea{
     color: #B1B1B1;
     padding: 16px;
 }
-.text-here p {
-    margin: auto;
+*/
+textarea{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    outline: none;
+    padding: 10px;
 }
+
 i {
     color: #B1B1B1;
 }
@@ -165,7 +171,7 @@ i {
 .main-chat{
     padding: 40px 0;
 }
-.mine-text{
+.send-text{
     background-color: #DEF8C0;
     padding: 14px;
     border-radius: 11px;
@@ -179,7 +185,7 @@ i {
 .text-time{
     font-size: 10px;
 }
-.contact-text{
+.received-text{
     background-color: white;
     padding: 14px;
     border-radius: 11px;
@@ -219,6 +225,11 @@ i {
     text-decoration: underline;
     color:#6D7376;
 }
+.send-text + .send-text, 
+.received-text + .received-text{
+    margin-top: -4px;
+}
+
 /*MEDIA QUERY*/
 
 /*da 768px a 992px*/
@@ -257,13 +268,13 @@ i {
         border-bottom: 1px solid #FAFAFA;
         padding: 7px 14px;
     }
-    .mine-text, .contact-text{
+    .send-text, .received-text{
         max-width: 60%;
     }
-    .mine-text{
+    .send-text{
         margin-right: 50px;
     }
-    .contact-text{
+    .received-text{
         margin-left: 50px;
     }
     .col-5{
@@ -347,10 +358,10 @@ i {
     .contact-list{
         margin-right: 14px;
     }
-    .mine-text{
+    .send-text{
         margin-right: 8%;
     }
-    .contact-text{
+    .received-text{
         margin-left: 8%;
     }
 }
